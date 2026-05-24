@@ -18,7 +18,7 @@ export default function Projects() {
         <SectionHeader
           label="Featured Work"
           title="Enterprise Systems & Platforms"
-          description="Production-oriented projects spanning AI knowledge systems, IT operations, full-stack platforms, and intelligent automation — built for real operational use."
+          description="Battle-tested projects spanning AI knowledge systems, IT operations, full-stack platforms, and intelligent automation — built for real operational use."
         />
 
         <div className="space-y-20">

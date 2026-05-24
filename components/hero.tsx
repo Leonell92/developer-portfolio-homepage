@@ -28,16 +28,16 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-sky" />
               </span>
-              Available for enterprise AI &amp; systems work
+              Open to high-impact AI &amp; systems contracts
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-semibold leading-[1.1] tracking-tight text-[#f8fafc] text-balance">
-              Building Intelligent Systems, Automation Workflows &amp;{' '}
+              Building Intelligent Systems &amp;{' '}
               <span className="gradient-text">Enterprise AI Solutions</span>
             </h1>
 
             <p className="text-lg text-[#cbd5e1] leading-relaxed max-w-xl">
-              AI systems engineer specializing in enterprise automation, Full stack intelligent RAG systems, analytics dashboards, and scalable full-stack web development.
+              I turn complex systems requirements into clean, working software — specializing in enterprise automation, intelligent RAG systems, scalable analytics dashboards, and full-stack web development.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">

@@ -98,7 +98,7 @@ export const expertiseItems: ExpertiseItem[] = [
     icon: PenLine,
     title: 'Technical Writing',
     description:
-      'Multi-niched writer covering technical documentation, cryptocurrency, architecture docs, API guides, and various other specialized niches.',
+      'Content strategist and technical writer covering software documentation, API guides, blockchain & crypto, and other domain-specific niches.',
     metrics: [
       { label: 'Articles', value: '35+' },
       { label: 'Guides', value: '20+' },

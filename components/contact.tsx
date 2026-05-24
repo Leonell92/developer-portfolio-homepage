@@ -59,11 +59,10 @@ export default function Contact() {
             Get in Touch
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#f8fafc] tracking-tight text-balance mb-4">
-            Let&apos;s Build Intelligent Systems Together
+            Have a Project in Mind? Let&apos;s Talk.
           </h2>
           <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto">
-            Ready to discuss enterprise AI, automation, or analytics projects? Reach out and let&apos;s
-            architect something production-ready.
+            Whether it&apos;s an AI pipeline, a full-stack build, or technical content — I&apos;d love to hear what you&apos;re working on.
           </p>
         </div>
 
