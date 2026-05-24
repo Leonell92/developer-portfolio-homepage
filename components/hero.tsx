@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, Download, Mail, Activity, Database, Cpu } from 'lucide-react'
@@ -8,9 +7,6 @@ import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 export default function Hero() {
-
-
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16">
       <div className="absolute inset-0 bg-[#0b1023] dark:bg-[#0b1023]" />
@@ -32,11 +28,11 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-sky" />
               </span>
-              Available for enterprise AI & systems work
+              Available for enterprise AI &amp; systems work
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-semibold leading-[1.1] tracking-tight text-[#f8fafc] text-balance">
-              Building Intelligent Systems, Automation Workflows &{' '}
+              Building Intelligent Systems, Automation Workflows &amp;{' '}
               <span className="gradient-text">Enterprise AI Solutions</span>
             </h1>
 
@@ -89,34 +85,28 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative mt-10 lg:mt-0">
-            <FloatingCard
-              className="absolute -top-4 right-0 w-48 animate-float hidden sm:block"
-              title="RAG Pipeline"
-              value="Active"
-              status="success"
-            />
-            <FloatingCard
-              className="absolute top-32 -left-8 w-44 animate-float-slow hidden md:block"
-              title="Workflows"
-              value="6 running"
-              status="neutral"
-            />
-            <FloatingCard
-              className="absolute bottom-8 right-12 w-52 hidden sm:block"
-              title="Analytics"
-              value="24 KPIs"
-              status="success"
-            />
+          <div className="relative mt-10 lg:mt-0 flex justify-center lg:justify-end">
+            {/* RAG Pipeline badge — kept */}
+            <div className="absolute -top-4 right-0 z-10 hidden sm:block">
+              <FloatingCard
+                className="w-48 animate-float"
+                title="RAG Pipeline"
+                value="Active"
+                status="success"
+              />
+            </div>
 
-            <div className="glass-surface-strong rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-sky/10 relative aspect-[4/5] max-w-sm mx-auto lg:ml-auto">
-              <Image 
-                src="/hero-image.png" 
-                alt="Leo Emmanuel" 
-                fill 
-                className="object-cover" 
+            {/* Profile image card */}
+            <div className="glass-surface-strong rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-sky/10 relative w-full max-w-sm aspect-[3/4]">
+              <Image
+                src="/hero-image.png"
+                alt="Leo Emmanuel"
+                fill
+                className="object-cover object-top"
                 priority
               />
+              {/* subtle gradient overlay at the bottom for polish */}
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0b1023]/60 to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
@@ -154,4 +144,3 @@ function FloatingCard({
     </div>
   )
 }
-
