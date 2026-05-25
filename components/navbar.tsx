@@ -49,7 +49,7 @@ export default function Navbar() {
           : 'bg-transparent py-5'
       )}
     >
-      <nav className="section-container flex items-center justify-between px-4 sm:px-6 lg:px-8">
+      <nav className="section-container flex items-center justify-between">
         <Link href="/" className="group flex flex-col gap-0.5">
           <span className="text-base font-semibold tracking-tight text-foreground group-hover:text-sky transition-colors">
             {siteConfig.name}

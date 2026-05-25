@@ -4,7 +4,7 @@ import { navLinks, siteConfig } from '@/lib/portfolio-data'
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-background py-12">
-      <div className="section-container px-4 sm:px-6 lg:px-8">
+      <div className="section-container">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
             <p className="font-semibold text-foreground">{siteConfig.name}</p>
