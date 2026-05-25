@@ -42,16 +42,16 @@ export const expertiseItems: ExpertiseItem[] = [
     icon: Brain,
     title: 'AI Engineering',
     description:
-      'RAG pipelines, semantic search, LLM orchestration, and enterprise knowledge systems that scale with real operational load.',
+      'Semantic search, LLM integrations, intelligent knowledge systems, and enterprise AI tooling built for real operational load.',
     metrics: [
-      { label: 'RAG Systems', value: '12+' },
+      { label: 'AI Systems Built', value: '12+' },
       { label: 'LLM Integrations', value: '8+' },
     ],
     features: [
       'Semantic Search',
-      'RAG Pipelines',
+      'Knowledge Systems',
       'LLM Orchestration',
-      'Enterprise Knowledge',
+      'Enterprise Tooling',
     ],
   },
   {
@@ -137,10 +137,10 @@ export const projects: Project[] = [
     title: 'Nexus IQ',
     subtitle: 'Enterprise AI Knowledge Assistant',
     description:
-      'AI-powered enterprise knowledge management and internal support platform featuring semantic search, RAG pipelines, analytics dashboards, authentication systems, and intelligent IT support workflows.',
+      'AI-powered enterprise knowledge management and internal support platform featuring semantic search, an intelligent AI assistant, analytics dashboards, authentication systems, and IT support workflows.',
     tech: ['Python', 'Streamlit', 'LangChain', 'Groq API', 'ChromaDB', 'SQLAlchemy'],
     features: [
-      'Semantic search & RAG',
+      'Semantic search & AI assistant',
       'Analytics dashboards',
       'Auth & role management',
       'IT support workflows',
@@ -416,7 +416,7 @@ export const analyticsCategories = [
 
 export const techStackGroups = [
   {
-    category: 'AI & RAG',
+    category: 'AI & Machine Learning',
     technologies: ['Python', 'LangChain', 'ChromaDB', 'Groq API', 'OpenAI API', 'Embeddings'],
   },
   {
@@ -446,8 +446,8 @@ export const journeyMilestones = [
     year: '2024',
     title: 'Enterprise AI Systems',
     description:
-      'Architected Nexus IQ and enterprise RAG platforms — combining semantic search, LLM orchestration, and operational analytics for internal knowledge systems.',
-    tags: ['RAG', 'LangChain', 'Enterprise'],
+      'Architected Nexus IQ and enterprise AI platforms — combining semantic search, LLM integration, and operational analytics for internal knowledge systems.',
+    tags: ['AI Systems', 'LangChain', 'Enterprise'],
   },
   {
     year: '2023',
@@ -481,7 +481,7 @@ export const journeyMilestones = [
 
 export const terminalLines = [
   { type: 'command', text: '$ nexus-iq deploy --env production' },
-  { type: 'output', text: '✓ RAG pipeline initialized' },
+  { type: 'output', text: '✓ AI knowledge system initialized' },
   { type: 'output', text: '✓ ChromaDB vector store connected' },
   { type: 'output', text: '✓ Analytics dashboard live' },
   { type: 'command', text: '$ python orchestrator.py --status' },

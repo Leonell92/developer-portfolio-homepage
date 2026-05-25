@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 grid-pattern" />
       <div className="absolute inset-0 noise-overlay opacity-30" />
 
-      <div className="section-container relative z-10 px-4 sm:px-6 lg:px-8 w-full">
+      <div className="section-container relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-surface text-xs font-medium text-sky border border-sky/20">
@@ -32,12 +32,12 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-semibold leading-[1.1] tracking-tight text-[#f8fafc] text-balance">
-              Building Intelligent Systems &amp;{' '}
-              <span className="gradient-text">Enterprise AI Solutions</span>
+              Enterprise Systems &amp;{' '}
+              <span className="gradient-text">Technical Operations</span>
             </h1>
 
             <p className="text-lg text-[#cbd5e1] leading-relaxed max-w-xl">
-              I turn complex systems requirements into clean, working software — specializing in enterprise automation, intelligent RAG systems, scalable analytics dashboards, and full-stack web development.
+              I design and operate enterprise systems that actually work — from internal tooling and helpdesk platforms to automation workflows, analytics dashboards, and full-stack web applications.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">
@@ -74,7 +74,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-6 pt-2">
               {[
                 { icon: Cpu, label: 'AI Systems' },
-                { icon: Database, label: 'RAG Pipelines' },
+                { icon: Database, label: 'Systems Integration' },
                 { icon: Activity, label: 'Ops Automation' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 text-sm text-[#cbd5e1]">
@@ -86,11 +86,11 @@ export default function Hero() {
           </div>
 
           <div className="relative mt-10 lg:mt-0 flex justify-center lg:justify-end">
-            {/* RAG Pipeline badge — kept */}
+            {/* Tech badge */}
             <div className="absolute -top-4 right-0 z-10 hidden sm:block">
               <FloatingCard
                 className="w-48 animate-float"
-                title="RAG Pipeline"
+                title="AI Systems"
                 value="Active"
                 status="success"
               />

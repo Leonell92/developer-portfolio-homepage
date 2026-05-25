@@ -76,7 +76,7 @@ function FeaturedVisual({ title }: { title: string }) {
 
   if (title === 'AI Engineering') {
     const nodes = [
-      { cx: 60, cy: 55, label: 'RAG' },
+      { cx: 60, cy: 55, label: 'NLP' },
       { cx: 175, cy: 30, label: 'LLM' },
       { cx: 260, cy: 70, label: 'Vector' },
       { cx: 175, cy: 120, label: 'Embed' },
@@ -94,7 +94,7 @@ function FeaturedVisual({ title }: { title: string }) {
             <text x={n.cx} y={n.cy + 20} textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize="8" fontFamily="system-ui">{n.label}</text>
           </g>
         ))}
-        <text x="160" y="155" textAnchor="middle" fill="rgba(56,189,248,0.4)" fontSize="9" fontFamily="system-ui">Semantic Search · Vector Retrieval · LLM Synthesis</text>
+        <text x="160" y="155" textAnchor="middle" fill="rgba(56,189,248,0.4)" fontSize="9" fontFamily="system-ui">Semantic Search · Knowledge Systems · LLM Synthesis</text>
       </svg>
     )
   }
@@ -397,7 +397,7 @@ export default function Expertise() {
       <div className="relative z-10 section-padding section-container">
 
         {/* ── Section header ── */}
-        <div className="text-center mb-20 animate-fade-up">
+        <div className="flex flex-col items-center text-center mb-20 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-50 border border-sky-200/80 text-sky-600 text-xs font-semibold uppercase tracking-[0.18em] mb-6">
             <Sparkles className="w-3 h-3" />
             Interactive Portfolio
@@ -438,15 +438,15 @@ export default function Expertise() {
         {/* ── Bento grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5">
 
-          {/* Featured AI card — spans 8 cols */}
-          <div className="md:col-span-2 lg:col-span-7 xl:col-span-8">
+          {/* Featured AI card — spans 8 cols on lg, full width on mobile */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-7 xl:col-span-8 w-full">
             <AnimatePresence mode="wait">
               <FeaturedAICard key={activeItem.title} item={activeItem} />
             </AnimatePresence>
           </div>
 
           {/* Right column — two stacked small cards */}
-          <div className="md:col-span-1 lg:col-span-5 xl:col-span-4 flex flex-col gap-5">
+          <div className="col-span-1 md:col-span-1 lg:col-span-5 xl:col-span-4 flex flex-col gap-5 w-full">
             {otherItems.slice(0, 2).map((item) => {
               const originalIndex = expertiseItems.findIndex(i => i.title === item.title)
               return (
