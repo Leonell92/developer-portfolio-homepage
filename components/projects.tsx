@@ -128,7 +128,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {secondary.map((project, index) => (
             <ScrollReveal
               key={project.id}
@@ -139,10 +139,23 @@ export default function Projects() {
                 className={cn(
                   'group h-full rounded-2xl glass-surface hover-lift overflow-hidden border border-border',
                   project.screenshots
-                    ? 'grid md:grid-cols-2 md:items-center'
+                    ? 'flex flex-col md:grid md:grid-cols-2 md:items-center'
                     : 'flex flex-col'
                 )}
               >
+                {/* Mobile-only: title above image (screenshot cards only) */}
+                {project.screenshots && (
+                  <div className="md:hidden p-5 pb-2">
+                    <p className="text-[10px] uppercase tracking-widest text-sky mb-1">
+                      {project.subtitle}
+                    </p>
+                    <h3 className="text-xl font-semibold text-foreground group-hover:text-sky transition-colors">
+                      {project.title}
+                    </h3>
+                  </div>
+                )}
+
+                {/* Image / mockup */}
                 {project.screenshots ? (
                   <div className="p-4 sm:p-5 md:p-6">
                     <ProjectVisual project={project} />
@@ -153,18 +166,23 @@ export default function Projects() {
                     mockupClassName="rounded-none border-0 aspect-[16/9]"
                   />
                 )}
+
+                {/* Content */}
                 <div className="p-5 md:p-6 flex flex-col flex-1">
-                  <p className="text-[10px] uppercase tracking-widest text-sky mb-1">
-                    {project.subtitle}
-                  </p>
-                  <h3
-                    className={cn(
-                      'font-semibold text-foreground mb-2 group-hover:text-sky transition-colors',
-                      project.screenshots ? 'text-xl md:text-2xl' : 'text-lg'
-                    )}
-                  >
-                    {project.title}
-                  </h3>
+                  {/* Desktop title for screenshot cards / always visible for non-screenshot */}
+                  <div className={project.screenshots ? 'hidden md:block' : ''}>
+                    <p className="text-[10px] uppercase tracking-widest text-sky mb-1">
+                      {project.subtitle}
+                    </p>
+                    <h3
+                      className={cn(
+                        'font-semibold text-foreground mb-2 group-hover:text-sky transition-colors',
+                        project.screenshots ? 'text-xl md:text-2xl' : 'text-lg'
+                      )}
+                    >
+                      {project.title}
+                    </h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
                     {project.description}
                   </p>
@@ -204,6 +222,7 @@ export default function Projects() {
             </ScrollReveal>
           ))}
         </div>
+
       </div>
     </section>
   )
