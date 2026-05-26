@@ -26,17 +26,30 @@ export default function Projects() {
             <ScrollReveal key={project.id} delay={100}>
               <article
                 className={cn(
-                  'grid lg:grid-cols-2 gap-8 lg:gap-12 items-center',
+                  'flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-center',
                   index % 2 === 1 && 'lg:[direction:rtl] lg:*:[direction:ltr]'
                 )}
               >
+                {/* Mobile-only: title/subtitle above image */}
+                <div className="lg:hidden">
+                  <p className="text-xs font-medium uppercase tracking-widest text-sky mb-2">
+                    {project.subtitle}
+                  </p>
+                  <h3 className="text-2xl font-semibold text-foreground tracking-tight">
+                    {project.title}
+                  </h3>
+                </div>
+
+                {/* Project image / screenshots */}
                 <div className="relative overflow-hidden rounded-xl">
                   <ProjectVisual project={project} />
                   <div className="absolute -inset-y-6 -inset-x-0 bg-sky/5 rounded-2xl blur-2xl -z-10" />
                 </div>
 
+                {/* Text content */}
                 <div className="space-y-5">
-                  <div>
+                  {/* Desktop-only: title/subtitle inside text column */}
+                  <div className="hidden lg:block">
                     <p className="text-xs font-medium uppercase tracking-widest text-sky mb-2">
                       {project.subtitle}
                     </p>
