@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Download, Mail, Activity, Database, Cpu } from 'lucide-react'
+import { ArrowRight, Mail, Activity, Database, Cpu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -58,17 +58,6 @@ export default function Hero() {
                   Contact Me
                 </Link>
               </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="ghost"
-                className="text-[#cbd5e1] hover:text-[#f8fafc] hover:bg-white/5"
-              >
-                <a href="/resume.pdf" download>
-                  <Download className="w-4 h-4 mr-1.5" />
-                  Download Resume
-                </a>
-              </Button>
             </div>
 
             <div className="flex flex-wrap gap-6 pt-2">
@@ -97,7 +86,7 @@ export default function Hero() {
             </div>
 
             {/* Profile image card */}
-            <div className="glass-surface-strong rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-sky/10 relative w-full max-w-sm aspect-[3/4]">
+            <div className="glass-surface-strong rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-sky/10 relative w-full max-w-[260px] sm:max-w-xs lg:max-w-sm aspect-[3/4]">
               <Image
                 src="/hero-image.png"
                 alt="Leo Emmanuel"

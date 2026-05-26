@@ -12,7 +12,7 @@ const GITHUB_USER = 'https://github.com/Leonell92'
 
 export const siteConfig = {
   name: 'Leo Emmanuel',
-  title: 'AI Systems Engineer',
+  title: 'AI Systems Engineer & Tech Support',
   email: 'Lemmanuel659@gmail.com',
   github: GITHUB_USER,
   linkedin: 'https://www.linkedin.com/in/leo-emmanuel-550488150/',

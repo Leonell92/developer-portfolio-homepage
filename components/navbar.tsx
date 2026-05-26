@@ -120,7 +120,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="lg:hidden glass-surface border-t border-border mx-4 mt-2 rounded-xl p-4 space-y-1">
+        <div className="lg:hidden bg-[#0b1023] border border-white/10 shadow-xl shadow-black/40 mx-4 mt-2 rounded-xl p-4 space-y-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
