@@ -86,7 +86,7 @@ export default function Hero() {
             </div>
 
             {/* Profile image card */}
-            <div className="glass-surface-strong rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-sky/10 relative w-full max-w-[260px] sm:max-w-xs lg:max-w-sm aspect-[3/4]">
+            <div className="glass-surface-strong rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-sky/10 relative w-full max-w-sm aspect-[3/4]">
               <Image
                 src="/hero-image.png"
                 alt="Leo Emmanuel"
