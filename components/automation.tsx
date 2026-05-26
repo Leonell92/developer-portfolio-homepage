@@ -23,12 +23,12 @@ export default function Automation() {
 
         <div className="grid lg:grid-cols-5 gap-8 items-start">
           <ScrollReveal className="lg:col-span-2" delay={0}>
-            <div className="rounded-2xl border border-sky/20 bg-[#0b1023] p-6 font-mono text-sm shadow-2xl shadow-sky/5">
+            <div className="rounded-2xl border border-sky/20 bg-[#0b1023] p-6 font-mono text-sm shadow-2xl shadow-sky/5 overflow-hidden">
               <div className="flex items-center gap-2 mb-4 pb-4 border-b border-white/10">
                 <Terminal className="w-4 h-4 text-sky" />
                 <span className="text-[#cbd5e1]/70">automation-engine</span>
               </div>
-              <pre className="text-[#cbd5e1]/90 whitespace-pre-wrap leading-relaxed">
+              <pre className="text-[#cbd5e1]/90 whitespace-pre-wrap leading-relaxed overflow-x-auto text-[11px] sm:text-sm">
 {`┌─────────────────────────────────┐
 │  Trigger  →  Transform  →  Act  │
 └─────────────────────────────────┘

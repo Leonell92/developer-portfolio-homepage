@@ -13,7 +13,7 @@ export default function Projects() {
   const secondary = projects.filter((p) => !p.featured)
 
   return (
-    <section id="projects" className="section-padding bg-muted/20">
+    <section id="projects" className="section-padding bg-muted/20 overflow-hidden">
       <div className="section-container">
         <SectionHeader
           label="Featured Work"
@@ -30,9 +30,9 @@ export default function Projects() {
                   index % 2 === 1 && 'lg:[direction:rtl] lg:*:[direction:ltr]'
                 )}
               >
-                <div className="relative">
+                <div className="relative overflow-hidden rounded-xl">
                   <ProjectVisual project={project} />
-                  <div className="absolute -inset-4 bg-sky/5 rounded-2xl blur-2xl -z-10" />
+                  <div className="absolute -inset-y-6 -inset-x-0 bg-sky/5 rounded-2xl blur-2xl -z-10" />
                 </div>
 
                 <div className="space-y-5">
