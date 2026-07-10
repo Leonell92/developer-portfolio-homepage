@@ -24,13 +24,13 @@ Remote ready, async-friendly, and always on deadline.
 
 #### **Freelance Content & Technical Writer**  
 *Remote | 2023 – Present*
-* **Authored 35+ high-traffic technical articles and 20+ API guides** covering Python, automation, and enterprise systems, growing organic search traffic for clients by over 50%.
+* **Authored 35+ high-traffic technical articles and 20+ API guides** covering Python, automation, and business systems, growing organic search traffic for clients by over 50%.
 * **Created crystal-clear system documentation and developer quickstarts** that reduced user onboarding friction and support ticket volumes by 20% for developer platforms.
 * **Engineered guideline-compliant, high-volume content pipelines** using specialized editor frameworks, cutting manual editing overhead by 40% while maintaining 100% publication standards.
 
 #### **Independent Data & AI Task Contributor**  
 *Remote | 2024 – Present*
-* **Evaluated and annotated over 10,000 enterprise data points** for AI training sets, maintaining a 98.7% quality accuracy rating and improving downstream LLM response grounding.
+* **Evaluated and annotated over 10,000 business data points** for AI training sets, maintaining a 98.7% quality accuracy rating and improving downstream LLM response grounding.
 * **Created and structured high-quality datasets for validation workflows**, directly contributing to the fine-tuning and deployment of search-relevance and categorization models.
 * **Established standardized compliance checklists** for datasets, decreasing validation turnaround times by 15% through clean data structure habits.
 
@@ -38,11 +38,11 @@ Remote ready, async-friendly, and always on deadline.
 
 ### KEY PROJECTS
 
-#### **Nexus IQ — Enterprise AI Knowledge Assistant**
-* **Developed an intelligent enterprise knowledge system** using Python, LangChain, and ChromaDB that indexes over 10,000 documentation files, lowering query latency to under 2 seconds.
+#### **Nexus IQ — AI Knowledge Assistant**
+* **Developed an intelligent AI knowledge system** using Python, LangChain, and ChromaDB that indexes over 10,000 documentation files, lowering query latency to under 2 seconds.
 * **Built secure database architectures and interactive Streamlit admin dashboards**, enabling operations teams to search system wikis and track tickets in real time.
 
-#### **IT Helpdesk Enterprise — Ticket Management Platform**
+#### **IT Helpdesk Platform — Ticket Management**
 * **Designed and engineered an automated ticket-lifecycle platform** in Python with SQLAlchemy and Pandas, resulting in a 94% user issue resolution rate.
 * **Created background automation rules** that routed urgent system tickets automatically, saving support agents 10+ hours of sorting weekly.
 
