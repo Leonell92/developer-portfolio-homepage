@@ -10,7 +10,7 @@ export default function Footer() {
             <p className="font-semibold text-foreground">{siteConfig.name}</p>
             <p className="text-sm text-muted-foreground mt-1">{siteConfig.title}</p>
             <p className="text-xs text-muted-foreground mt-4 max-w-xs">
-              Building enterprise AI systems, automation workflows, and analytics platforms.
+              Building AI solutions, business software, automation tools, and data-driven applications.
             </p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2">

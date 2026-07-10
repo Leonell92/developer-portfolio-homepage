@@ -28,16 +28,16 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-sky" />
               </span>
-              Open to high-impact AI &amp; systems contracts
+              Available for AI, software &amp; automation projects
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-semibold leading-[1.1] tracking-tight text-[#f8fafc] text-balance">
-              Enterprise Systems &amp;{' '}
-              <span className="gradient-text">Technical Operations</span>
+              Building Smart Software, AI Solutions &amp;{' '}
+              <span className="gradient-text">Automation</span>
             </h1>
 
             <p className="text-lg text-[#cbd5e1] leading-relaxed max-w-xl">
-              I design and operate enterprise systems that actually work — from internal tooling and helpdesk platforms to automation workflows, analytics dashboards, and full-stack web applications.
+              I help businesses and teams save time by building AI tools, business software, automation systems, dashboards, and modern web applications that solve real problems.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3">
@@ -62,9 +62,9 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-6 pt-2">
               {[
-                { icon: Cpu, label: 'AI Systems' },
-                { icon: Database, label: 'Systems Integration' },
-                { icon: Activity, label: 'Ops Automation' },
+                { icon: Cpu, label: 'AI Solutions' },
+                { icon: Database, label: 'Software Development' },
+                { icon: Activity, label: 'Process Automation' },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 text-sm text-[#cbd5e1]">
                   <Icon className="w-4 h-4 text-sky" />

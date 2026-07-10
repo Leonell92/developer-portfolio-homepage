@@ -62,7 +62,7 @@ export default function Contact() {
             Have a Project in Mind? Let&apos;s Talk.
           </h2>
           <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto">
-            Whether it&apos;s an AI pipeline, a full-stack build, or technical content — I&apos;d love to hear what you&apos;re working on.
+            Need an AI solution, business application, automation tool, dashboard, or technical content? I'd love to hear about your project and discuss how I can help.
           </p>
         </div>
 

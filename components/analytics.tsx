@@ -106,8 +106,8 @@ export default function Analytics() {
       <div className="section-container">
         <SectionHeader
           label="Data Analysis"
-          title="Data Analysis"
-          description="Transforming raw data into insights, trends, and business intelligence that drive smarter decisions."
+          title="Turning Data Into Better Decisions"
+          description="I help businesses understand their data by creating dashboards, reports, and visualizations that reveal trends and opportunities."
         />
 
         {/* ── Excel dashboard image ── */}

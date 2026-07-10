@@ -9,7 +9,7 @@ export default function TechStack() {
         <SectionHeader
           label="Technical Stack"
           title="Technology Ecosystem"
-          description="A curated stack spanning AI orchestration, backend systems, and data analytics — selected for enterprise reliability and scale."
+          description="A curated stack spanning AI orchestration, backend systems, and data analytics — selected for reliability and scale."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">

@@ -18,7 +18,7 @@ export default function Automation() {
         <SectionHeader
           label="AI & Automation"
           title="Operational Systems, Automated"
-          description="Python automation, workflow orchestration, and desktop tooling that eliminate manual processes across real enterprise environments."
+          description="Python automation, workflow orchestration, and desktop tooling that eliminate manual processes across real business environments."
         />
 
         <div className="grid lg:grid-cols-5 gap-8 items-start">

@@ -17,8 +17,8 @@ export default function Projects() {
       <div className="section-container">
         <SectionHeader
           label="Featured Work"
-          title="Enterprise Systems & Platforms"
-          description="Battle-tested projects spanning AI knowledge systems, IT operations, full-stack platforms, and intelligent automation — built for real operational use."
+          title="Featured Projects"
+          description="Here are some of the software projects I've built—from AI assistants and business applications to automation tools and data dashboards."
         />
 
         <div className="space-y-20">

@@ -8,8 +8,8 @@ export default function Journey() {
       <div className="section-container">
         <SectionHeader
           label="Engineering Journey"
-          title="Technical Evolution"
-          description="A progression from foundations to enterprise AI systems — driven by real projects, operational challenges, and continuous specialization."
+          title="My Journey"
+          description="My journey has taken me from learning Python to building AI applications, business software, automation tools, and data solutions for real-world problems."
         />
 
         <div className="relative max-w-3xl mx-auto">

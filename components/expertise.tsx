@@ -170,7 +170,7 @@ function FeaturedVisual({ title }: { title: string }) {
     )
   }
 
-  if (title === 'Enterprise Software') {
+  if (title === 'Business Software') {
     return (
       <div className="w-full h-full flex gap-3 items-center justify-center p-4">
         {[
@@ -221,7 +221,7 @@ const cardAccents: Record<string, { from: string; to: string; iconBg: string; ic
   'Full Stack Systems':  { from: 'from-violet-400/20', to: 'to-blue-400/10',   iconBg: 'from-violet-400/15 to-transparent', iconColor: 'text-violet-500', dot: 'bg-violet-400', glow: 'from-violet-400/40 via-fuchsia-300/10 to-blue-400/20' },
   'Python Automation':   { from: 'from-emerald-400/20', to: 'to-teal-400/10',  iconBg: 'from-emerald-400/15 to-transparent', iconColor: 'text-emerald-500', dot: 'bg-emerald-400', glow: 'from-emerald-400/40 via-teal-300/10 to-cyan-400/20' },
   'Data Analytics':      { from: 'from-amber-400/20', to: 'to-orange-400/10',  iconBg: 'from-amber-400/15 to-transparent', iconColor: 'text-amber-500', dot: 'bg-amber-400', glow: 'from-amber-400/40 via-yellow-300/10 to-orange-400/20' },
-  'Enterprise Software': { from: 'from-cyan-400/20', to: 'to-sky-400/10',      iconBg: 'from-cyan-400/15 to-transparent', iconColor: 'text-cyan-500', dot: 'bg-cyan-400', glow: 'from-cyan-400/40 via-sky-300/10 to-blue-400/20' },
+  'Business Software':   { from: 'from-cyan-400/20', to: 'to-sky-400/10',      iconBg: 'from-cyan-400/15 to-transparent', iconColor: 'text-cyan-500', dot: 'bg-cyan-400', glow: 'from-cyan-400/40 via-sky-300/10 to-blue-400/20' },
   'Technical Writing':   { from: 'from-rose-400/20', to: 'to-pink-400/10',     iconBg: 'from-rose-400/15 to-transparent', iconColor: 'text-rose-500', dot: 'bg-rose-400', glow: 'from-rose-400/40 via-pink-300/10 to-purple-400/20' },
 }
 
@@ -281,7 +281,7 @@ function FeaturedAICard({ item }: { item: typeof expertiseItems[0] }) {
 
         {/* feature tags */}
         <div className="grid grid-cols-2 gap-2">
-          {(item.features || ['Enterprise Ready', 'Scalable Architecture', 'High Performance', 'Robust Security']).map((f) => (
+          {(item.features || ['Production Ready', 'Scalable Architecture', 'High Performance', 'Robust Security']).map((f) => (
             <div key={f} className="flex items-center gap-2 text-xs text-[#64748B]">
               <div className={`w-1.5 h-1.5 rounded-full ${accent.dot} shrink-0`} />
               {f}
@@ -319,7 +319,7 @@ function FeaturedAICard({ item }: { item: typeof expertiseItems[0] }) {
 ───────────────────────────────────────────────────────────── */
 function CapCard({ item, onClick, isActive }: { item: typeof expertiseItems[0]; onClick: () => void; isActive: boolean }) {
   const Icon = item.icon
-  const accent = cardAccents[item.title] ?? cardAccents['Enterprise Software']
+  const accent = cardAccents[item.title] ?? cardAccents['Business Software']
 
   return (
     <motion.button
@@ -404,13 +404,13 @@ export default function Expertise() {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#071739] leading-tight mb-5 relative inline-block">
-            Systems I&nbsp;
+            What I Can&nbsp;
             <span className="relative">
               <span
                 className="bg-clip-text text-transparent"
                 style={{ backgroundImage: 'linear-gradient(135deg, #0ea5e9, #38bdf8 40%, #818cf8)' }}
               >
-                Design &amp; Operate
+                Help You Build
               </span>
               {/* animated underline glow */}
               <motion.div
@@ -431,7 +431,7 @@ export default function Expertise() {
           </h2>
 
           <p className="text-lg text-[#64748B] max-w-2xl mx-auto leading-relaxed">
-            Click on any capability below to explore its architecture, metrics, and technical deep-dive in the interactive dashboard.
+            Explore the services I offer, the technologies I use, and some of the projects I've built.
           </p>
         </div>
 
@@ -483,9 +483,9 @@ export default function Expertise() {
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-xs text-slate-400 tracking-wide">All systems operational</span>
           <span className="text-xs text-slate-300">·</span>
-          <span className="text-xs text-slate-400 tracking-wide">Production-grade infrastructure</span>
+          <span className="text-xs text-slate-400 tracking-wide">Production-ready infrastructure</span>
           <span className="text-xs text-slate-300">·</span>
-          <span className="text-xs text-slate-400 tracking-wide">Enterprise-ready</span>
+          <span className="text-xs text-slate-400 tracking-wide">Built for real use</span>
         </div>
       </div>
     </section>

@@ -4,9 +4,9 @@ import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Leo Emmanuel — Systems & Enterprise Tech Specialist',
+  title: 'Leo Emmanuel — Python Developer • AI Engineer • Automation Specialist',
   description:
-    'Systems specialist and enterprise tech expert — building internal tooling, IT helpdesk platforms, automation workflows, analytics dashboards, and full-stack applications.',
+    'Python developer and AI engineer building business software, AI solutions, automation tools, dashboards, and data-driven applications.',
   icons: {
     icon: [
       { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },

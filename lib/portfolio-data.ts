@@ -12,7 +12,7 @@ const GITHUB_USER = 'https://github.com/Leonell92'
 
 export const siteConfig = {
   name: 'Leo Emmanuel',
-  title: 'AI Systems Engineer & Tech Support',
+  title: 'Python Developer • AI Engineer • Automation Specialist • Data Analyst',
   email: 'Lemmanuel659@gmail.com',
   github: GITHUB_USER,
   linkedin: 'https://www.linkedin.com/in/leo-emmanuel-550488150/',
@@ -40,66 +40,96 @@ export const expertiseItems: ExpertiseItem[] = [
     icon: Brain,
     title: 'AI Engineering',
     description:
-      'Semantic search, LLM integrations, intelligent knowledge systems, and enterprise AI tooling built for real operational load.',
+      'I build AI-powered applications using tools like ChatGPT, Grok, Gemini, Claude, LangChain, and vector databases. These systems can answer questions, search company knowledge, automate tasks, and improve productivity.',
     metrics: [
       { label: 'AI Systems Built', value: '12+' },
       { label: 'LLM Integrations', value: '8+' },
     ],
     features: [
-      'Semantic Search',
-      'Knowledge Systems',
-      'LLM Orchestration',
-      'Enterprise Tooling',
+      'AI Assistants',
+      'Knowledge Search',
+      'Task Automation',
+      'Productivity Tools',
     ],
   },
   {
     icon: Layers,
     title: 'Full Stack Systems',
     description:
-      'End-to-end application architecture — APIs, auth layers, admin dashboards, and production-ready deployment patterns.',
+      'I build complete web applications—from the user interface to the database and backend. Whether it\'s an internal company tool or a customer-facing platform, I can handle the entire development process.',
     metrics: [
       { label: 'Full-Stack Apps', value: '15+' },
       { label: 'APIs Built', value: '20+' },
+    ],
+    features: [
+      'Web Applications',
+      'User Interfaces',
+      'Backend Systems',
+      'Database Design',
     ],
   },
   {
     icon: Terminal,
     title: 'Python Automation',
     description:
-      'Workflow orchestration, desktop utilities, scripting systems, and operational tooling that eliminate manual toil.',
+      'I create Python tools that automate repetitive work, connect different software, process data, and save hours of manual effort.',
     metrics: [
       { label: 'Automations', value: '30+' },
       { label: 'Scripts', value: '100+' },
+    ],
+    features: [
+      'Task Automation',
+      'Data Processing',
+      'Software Integration',
+      'Time Savings',
     ],
   },
   {
     icon: BarChart3,
     title: 'Data Analytics',
     description:
-      'Power BI dashboards, Excel modeling, KPI frameworks, and executive-ready analytics for business decisions.',
+      'I turn raw data into clear dashboards and reports that help businesses understand performance and make better decisions.',
     metrics: [
       { label: 'Dashboards', value: '25+' },
       { label: 'Reports', value: '40+' },
     ],
+    features: [
+      'Data Dashboards',
+      'Business Reports',
+      'Performance Tracking',
+      'Decision Support',
+    ],
   },
   {
     icon: Building2,
-    title: 'Enterprise Software',
+    title: 'Business Software',
     description:
-      'IT helpdesk platforms, ticketing workflows, internal tools, and systems designed for real organizational use.',
+      'I develop custom business software such as helpdesk systems, ticketing platforms, internal dashboards, and productivity tools tailored to how your team works.',
     metrics: [
       { label: 'Platforms', value: '6+' },
       { label: 'Users Served', value: '500+' },
+    ],
+    features: [
+      'Custom Software',
+      'Team Tools',
+      'Productivity Apps',
+      'Workflow Systems',
     ],
   },
   {
     icon: PenLine,
     title: 'Technical Writing',
     description:
-      'Content strategist and technical writer covering software documentation, API guides, blockchain & crypto, and other domain-specific niches.',
+      'I write clear technical documentation, software guides, API documentation, blog articles, and technical content that makes complex topics easier to understand.',
     metrics: [
       { label: 'Articles', value: '35+' },
       { label: 'Guides', value: '20+' },
+    ],
+    features: [
+      'Documentation',
+      'Software Guides',
+      'API Docs',
+      'Technical Articles',
     ],
   },
 ]
@@ -133,12 +163,12 @@ export const projects: Project[] = [
   {
     id: 'nexus-iq',
     title: 'Nexus IQ',
-    subtitle: 'Enterprise AI Knowledge Assistant',
+    subtitle: 'AI Knowledge Assistant',
     description:
-      'AI-powered enterprise knowledge management and internal support platform featuring semantic search, an intelligent AI assistant, analytics dashboards, authentication systems, and IT support workflows.',
+      'An AI assistant that helps employees quickly find company information, answer questions, search documents, and access internal knowledge from one place.',
     tech: ['Python', 'Streamlit', 'LangChain', 'Groq API', 'ChromaDB', 'SQLAlchemy'],
     features: [
-      'Semantic search & AI assistant',
+      'AI assistant & search',
       'Analytics dashboards',
       'Auth & role management',
       'IT support workflows',
@@ -170,10 +200,10 @@ export const projects: Project[] = [
   },
   {
     id: 'it-helpdesk',
-    title: 'IT Helpdesk Enterprise',
-    subtitle: 'Support & Ticket Management Platform',
+    title: 'IT Helpdesk Platform',
+    subtitle: 'Support & Ticket Management',
     description:
-      'Modern enterprise IT support and ticket management platform with dashboards, issue tracking, authentication, workflow automation, and operational analytics.',
+      'A modern helpdesk system where teams can report issues, track support tickets, monitor performance, and manage IT requests from one dashboard.',
     tech: ['Python', 'Streamlit', 'SQLAlchemy', 'PostgreSQL', 'Pandas'],
     features: [
       'Ticket lifecycle management',
@@ -189,7 +219,7 @@ export const projects: Project[] = [
     screenshots: [
       {
         src: '/projects/it-helpdesk-homepage.png',
-        alt: 'IT Helpdesk Enterprise homepage with dashboard overview and ticket management interface',
+        alt: 'IT Helpdesk Platform homepage with dashboard overview and ticket management interface',
         label: 'Homepage',
       },
     ],
@@ -199,9 +229,9 @@ export const projects: Project[] = [
   {
     id: 'aurora-hotel',
     title: 'Aurora Grand',
-    subtitle: 'Full-Stack Hospitality Platform',
+    subtitle: 'Hotel Management System',
     description:
-      'Full-stack hotel management application with booking systems, admin workflows, backend architecture, and database integration.',
+      'A complete hotel management system that handles bookings, guest records, room management, and administration.',
     tech: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'SQLAlchemy'],
     features: [
       'Booking engine',
@@ -266,10 +296,10 @@ export const projects: Project[] = [
   },
   {
     id: 'clipboard-intel',
-    title: 'Clipboard Intelligence Manager',
-    subtitle: 'Desktop Productivity Utility',
+    title: 'Clipboard Manager',
+    subtitle: 'Desktop Productivity Tool',
     description:
-      'Desktop clipboard automation utility that intelligently stores, organizes, and retrieves copied content for productivity workflows.',
+      'A desktop application that automatically saves everything you copy, making it easy to search, organize, and reuse text whenever you need it.',
     tech: ['Python', 'PyQt', 'SQLite', 'Keyboard Hooks'],
     features: [
       'Smart categorization',
@@ -285,7 +315,7 @@ export const projects: Project[] = [
     screenshots: [
       {
         src: '/projects/clipboardx-screenshot.png',
-        alt: 'Clipboard Intelligence Manager main interface with clipboard history and smart categorization',
+        alt: 'Clipboard Manager main interface with clipboard history and smart categorization',
         label: 'Main Interface',
       },
     ],
@@ -295,9 +325,9 @@ export const projects: Project[] = [
   {
     id: 'explorer-hook',
     title: 'Windows Explorer Hook',
-    subtitle: 'Tabbed File Explorer Utility',
+    subtitle: 'Tabbed File Explorer',
     description:
-      'Advanced Windows desktop utility that intercepts File Explorer instances and merges them into tabbed navigation workflows.',
+      'A Windows desktop utility that merges multiple File Explorer windows into tabbed navigation for better file management.',
     tech: ['C#', 'Win32 API', 'Shell Hooks', 'WPF'],
     features: [
       'Tabbed navigation',
@@ -442,37 +472,37 @@ export const techStackGroups = [
 export const journeyMilestones = [
   {
     year: '2024',
-    title: 'Enterprise AI Systems',
+    title: 'AI Applications',
     description:
-      'Architected Nexus IQ and enterprise AI platforms — combining semantic search, LLM integration, and operational analytics for internal knowledge systems.',
-    tags: ['AI Systems', 'LangChain', 'Enterprise'],
+      'Built AI-powered applications like Nexus IQ — combining AI assistants, knowledge search, and analytics to help teams work smarter.',
+    tags: ['AI Systems', 'LangChain', 'ChatGPT'],
   },
   {
     year: '2023',
-    title: 'Full-Stack Platform Engineering',
+    title: 'Full-Stack Development',
     description:
-      'Built IT helpdesk systems, hotel management platforms, and production dashboards with authentication, workflows, and database architecture.',
+      'Built helpdesk systems, hotel management platforms, and dashboards with authentication, workflows, and database integration.',
     tags: ['Streamlit', 'SQLAlchemy', 'Dashboards'],
   },
   {
     year: '2022',
-    title: 'Analytics & BI Specialization',
+    title: 'Data Analytics Focus',
     description:
-      'Developed Power BI and Excel analytics solutions — executive dashboards, KPI frameworks, and data transformation pipelines for business intelligence.',
+      'Developed Power BI and Excel analytics solutions — creating dashboards, reports, and data pipelines to help businesses understand performance.',
     tags: ['Power BI', 'Excel', 'Pandas'],
   },
   {
     year: '2021',
-    title: 'Automation Engineering',
+    title: 'Automation Tools',
     description:
-      'Created Python automation suites, desktop utilities, and workflow orchestration tools — eliminating manual processes across operations teams.',
+      'Created Python automation suites, desktop utilities, and workflow tools — saving hours of manual work across operations teams.',
     tags: ['Python', 'Selenium', 'Automation'],
   },
   {
     year: '2020',
-    title: 'Foundations & Systems Thinking',
+    title: 'Programming Foundations',
     description:
-      'Established core competencies in Python development, SQL, APIs, and technical writing — building the foundation for systems-level engineering.',
+      'Established core skills in Python development, SQL, APIs, and technical writing — building the foundation for software development.',
     tags: ['Python', 'SQL', 'APIs'],
   },
 ]

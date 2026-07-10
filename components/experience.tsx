@@ -5,7 +5,7 @@ const experiences = [
     company: 'TechCorp Solutions',
     position: 'Python Automation Engineer & Data Analyst',
     period: '2022 - Present',
-    description: 'Developing Python automation solutions, data analysis pipelines, and technical documentation for enterprise clients',
+    description: 'Developing Python automation solutions, data analysis pipelines, and technical documentation for business clients',
     achievements: [
       'Architected automated testing framework reducing manual testing time by 70%',
       'Built data analysis dashboards revealing key insights from complex datasets',
@@ -73,7 +73,7 @@ export default function Experience() {
             <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Multi-disciplinary expertise combining Python automation, data analysis, and technical communication
+            Over the years I've worked on software development, AI solutions, automation, data analysis, and technical writing for businesses across different industries.
           </p>
         </div>
 
